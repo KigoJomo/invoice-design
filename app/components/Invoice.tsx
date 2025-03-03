@@ -37,7 +37,7 @@ export default function Invoice({ data }: InvoiceProps) {
       {/* Invoice Table */}
       <div className="w-full">
         <table className="w-full">
-          <thead>
+          <thead className='w-full'>
             <tr className="w-full border-b border-gray-200">
               <th className="text-left py-3 px-2">Item</th>
               <th className="text-left py-3 px-2">Quantity</th>
