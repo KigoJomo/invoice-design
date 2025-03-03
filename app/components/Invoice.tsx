@@ -9,25 +9,24 @@ interface InvoiceProps {
 export default function Invoice({ data }: InvoiceProps) {
 
   return (
-    <div className="w-screen md:w-3/5 py-12 px-12 mx-auto shadow-md">
+    <div className="w-screen md:w-3/5 py-12 px-12 mx-auto shadow-md bg-amber-50">
 
       {/* Header with Logo */}
-      <div className="flex flex-col mb-8">
-        <div className="">
-          <Image src="https://jomokigo.vercel.app/images/logo-dark.png" alt="Logo" width={75} height={75} />
-        </div>
+      <div className="w-full flex flex-col mb-8">
+        <Image src="https://jomokigo.vercel.app/images/logo-dark.png" alt="Logo" width={75} height={75} />
         <div className="text-2xl abril">Jomo Kigo</div>
       </div>
 
       {/* Invoice Info */}
-      <div className="flex justify-between mb-8">
+      <div className="w-full flex justify-between mb-8">
         <div>
           <p className="font-bold mb-1">BILLED TO:</p>
           <p>{data.client.name}</p>
           <p>{data.client.email}</p>
           <p>{data.client.location}</p>
         </div>
-        <div className="text-right">
+
+        <div className="text-right flex flex-col">
           <p className="font-bold">Invoice No. {data.invoiceNumber}</p>
           <p>{data.date}</p>
         </div>
