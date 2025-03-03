@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Funnel+Display:wght@300..800&family=Italiana&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -10,15 +11,23 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+th, td, p {
+  font-family: 'Funnel Display', sans-serif;
+}
+
+.italiana{
+  font-family: 'Italiana', serif;
+}
+
+.abril{
+  font-family: 'Abril Fatface', serif;
+}
+
+.funnel{
+  font-family: 'Funnel Display', sans-serif;
 }
